@@ -41,7 +41,7 @@ class Collection implements CollectionInterface
         if (is_null($callback)) {
             sort($items);
         } else {
-            usort($items, $callback);
+            uasort($items, $callback);
         }
         return static::create($items);
     }
